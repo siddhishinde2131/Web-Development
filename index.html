@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Web Projects</title>
+  <style>
+    body {
+      background: #a45a5a;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #333;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+      margin-top: 30px;
+    }
+    .card {
+      background: #c25a5a;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌐 My Web Projects</h1>
+  <div class="cards">
+    <div class="card"><a href="Resume.html">Resume</a></div>
+    <div class="card"><a href="Form.html">Form</a></div>
+    <div class="card"><a href="Image.html">Image</a></div>
+    <div class="card"><a href="table.html">Table</a></div>
+    <div class="card"><a href="FormwithCSS.html">Form with CSS</a></div>
+    <div class="card"><a href="ResultwithCSS.html">Result with CSS</a></div>
+    <div class="card"><a href="list.html">List</a></div>
+    <div class="card"><a href="newwishlist.html">New Wishlist</a></div>
+    <div class="card"><a href="textformating.html">Text Formatting</a></div>
+  </div>
+
+</body>
+</html>
