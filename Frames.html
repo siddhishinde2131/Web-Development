@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Iframe Example</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #4CAF50;
+    }
+
+    .button-container {
+      margin: 20px 0;
+    }
+
+    .button-container a {
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+
+    .button-container a:hover {
+      background-color: #45a049;
+    }
+
+    iframe {
+      width: 90%;
+      height: 500px;
+      border: 2px solid #4CAF50;
+      border-radius: 10px;
+      margin-top: 20px;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌟 Welcome to My Interactive Webpage 🌟</h1>
+
+  <div class="button-container">
+    <a href="page1.html" target="content-frame">Open Page 1</a>
+    <a href="page2.html" target="content-frame">Open Page 2</a>
+    <a href="page3.html" target="content-frame">Open Page 3</a>
+  </div>
+
+  <iframe name="content-frame">
+    <!-- Default message if iframe doesn't work -->
+    Your browser does not support iframes.
+  </iframe>
+
+</body>
+</html>

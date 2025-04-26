@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Centered Interactive Link</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Make the entire body fill the screen */
+        body {
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            display: flex; /* Enable flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            background-color: #f4f4f4; /* Light background */
+        }
+
+        /* Styling the link to look like a button */
+        .my-link {
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        /* Hover effect */
+        .my-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <h2>Click the Link Below:</h2>
+
+    <a href="https://www.wikipedia.org" class="my-link" target="_blank">
+        Visit Wikipedia
+    </a>
+
+</body>
+</html>

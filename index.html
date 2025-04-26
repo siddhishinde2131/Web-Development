@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Programs</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #f9f9f9, #d4bdbd);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    h1 {
+      color: #5a189a;
+      text-align: center;
+      animation: slideDown 1s ease;
+      font-size: 2.8rem;
+    }
+
+    h2 {
+      color: #0077b6;
+      text-align: center;
+      animation: slideDown 1s ease;
+      font-size: 1.5rem;
+      margin-top: -10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #1d1d4a, #2e2e6f);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      padding: 30px 20px;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+      background: linear-gradient(135deg, #07022a, #2b2b5b);
+    }
+
+    .card:active {
+      transform: scale(0.97);
+      background: #1a0e7a;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #e7f0f8;
+      font-weight: 600;
+      font-size: 1.3rem;
+      display: block;
+      transition: color 0.3s;
+    }
+
+    .card a:hover {
+      color: #ffcc70;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 id="typing-text">👩‍💻</h1>
+  <h2>👩‍🎓 Name: Siddhi Ashok Shinde | Roll No: 11 | Batch: S1</h2>
+
+  <div class="cards">
+    <div class="card"><a href="textformating.html">Text Formatting</a></div>
+    <div class="card"><a href="Resume.html">Resume</a></div>
+    <div class="card"><a href="Form.html">Form</a></div>
+    <div class="card"><a href="Image1.html">Image</a></div>
+    <div class="card"><a href="table.html">Table</a></div>
+    <div class="card"><a href="list.html">List</a></div>
+    <div class="card"><a href="newwishlist.html">New Wishlist</a></div>
+    <div class="card"><a href="FormwithCSS.html">Form with CSS</a></div>
+    <div class="card"><a href="ResultwithCSS.html">Result with CSS</a></div>
+    <div class="card"><a href="ResumewithCSS.html">Resume with CSS</a></div>
+    <div class="card"><a href="Link.html">Link with css</a></div>
+    <div class="card"><a href="Frames.html">Frames with CSS</a></div>
+    <div class="card"><a href="xmlwithcss.xml">Frames with CSS</a></div>
+
+  </div>
+
+  <footer>
+    Made with ❤️ Siddhi
+  </footer>
+
+  <script>
+    const text = " My Web Assignment";
+    let index = 0;
+    function typeEffect() {
+      if (index < text.length) {
+        document.getElementById("typing-text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 100);
+      }
+    }
+    window.onload = typeEffect;
+  </script>
+
+</body>
+</html>
